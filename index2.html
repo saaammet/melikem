@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:linear-gradient(135deg,#ffe4ec,#fff);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    padding:20px;
+    max-width:90%;
+}
+
+.title{
+    font-size:28px;
+    font-weight:600;
+    color:#ff4d8d;
+
+    opacity:0;
+    transform:translateY(30px);
+
+    animation:fadeUp 1s ease forwards;
+}
+
+.subtitle{
+    margin-top:20px;
+
+    font-size:16px;
+    line-height:1.6;
+    color:#444;
+
+    opacity:0;
+    transform:translateY(20px);
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.show{
+    animation:fadeUp 1.2s ease forwards;
+    animation-delay:1.2s;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Öyle kuru kuruya kutlamak olmaz hanımefendiciim ❤️
+    </div>
+
+    <div class="subtitle" id="subtitle">
+        Tekrardan doğum günün kutlu olsunn. İyiki doğmuşsun, annen hanım iyiki seni doğurmuş, yüce rabbim iyi ki var etmiş. Dünya sensiz bu kadar anlamlı olmazdı. Aslında daha güzel şeyler de yapmak isterdim ama sınav zamanı o yüzden vaktim bu kadarına yetti. Seni çok seviyorum. İnşallah tüm duaların dileklerin kabul olur. İnşallah doğum gününde güzel geçer. Nasip olursa bir gün pastanızın mumunu ben yakmak isterim. Yanii bir gün değil bir ömür ben yakmak isterim. Tıpkı sizin beni yaktığınız gibii eheheh
+    </div>
+
+</div>
+
+<script>
+window.onload = () => {
+
+    setTimeout(() => {
+        document.getElementById("subtitle").classList.add("show");
+    }, 900);
+
+};
+</script>
+
+</body>
+</html>
